@@ -1,10 +1,10 @@
 #!/bin/bash
-# Noob sofre
-# nego não sabe entrar como Usuário root
+# No sufras mas 
+# # No sé cómo iniciar sesión como usuario root
 clear
 [[ "$(whoami)" != "root" ]] && {
 	clear
-	echo -e "\033[1;31me lá vamos nós, usuário root, \033[1;32m(\033[1;33msudo -i\033[1;32m)\033[0m"
+	echo -e "\033[1;31mY ahí vamos, usuario root, \033[1;32m(\033[1;33msudo -i\033[1;32m)\033[0m"
 	exit
 }
 [[ $(grep -c "prohibit-password" /etc/ssh/sshd_config) != '0' ]] && {
@@ -33,10 +33,10 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 iptables -A INPUT -p tcp --dport 8799 -j ACCEPT
 iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
 iptables -A INPUT -p tcp --dport 1194 -j ACCEPT
-clear && echo -ne "\033[1;32mDigite sua nova senha root\033[1;37m: "; read senha
+clear && echo -ne "\033[1;32mIntroduzca su nueva contraseña root\033[1;37m: "; read senha
 [[ -z "$senha" ]] && {
-echo -e "\n\033[1;31mCalma barboleta, vê se não erra de novo\033[0m"
+echo -e "\n\033[1;31mEspera un poco, a ver si no te vuelves a equivocar\033[0m"
 exit 0
 }
 echo "root:$senha" | chpasswd
-echo -e "\n\033[1;31m[ \033[1;33mVai brasiliam \033[1;31m]\033[1;37m - \033[1;32magora o bicho vai pegar \033[0m"
+echo -e "\n\033[1;31m[ \033[1;33mTHEFATHER12 \033[1;31m]\033[1;37m - \033[1;32mHACIENDO MAGIA EN TU VPS \033[0m"
