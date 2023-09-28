@@ -1,7 +1,7 @@
-# senharoot
+# ACCESE COMO USUARIO ROOT A SU VPS AZURE,GOOGLE VPS,ORACLE,AWS
 
-Entrar e definir como Usuário root 
+Inicie sesión y configúrelo como usuario root
 
 sudo -i
 
-bash <(wget -qO- https://raw.githubusercontent.com/leitura/senharoot/main/senharoot.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/thefather12/ROOTVPS/main/senharoot.sh)
